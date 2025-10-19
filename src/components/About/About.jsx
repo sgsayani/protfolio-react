@@ -11,9 +11,9 @@ const About = () => {
             <img src={theme_pattern} alt="" />
         </div>
         <div className="about-sections">
-            <div className="about-left">
+            {/* <div className="about-left">
                 <img src={profile_img} alt="" />
-            </div>
+            </div> */}
             <div className="about-right">
                 <div className="about-para">
                     <p>I am a frontend developer with a passion for creating user-friendly and visually appealing websites. I have experience in designing and developing responsive websites, as well as front-end development using HTML, CSS, ReactJS, AngularJs, NextJs and JavaScript. I am constantly learning and improving my skills to stay at the forefront of web development.</p>
