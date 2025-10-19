@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 import Skills from './components/Skills/Skills'
+import Experience from './components/Experience/Experience'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <About/>
       {/* <Services/> */}
       <Skills/>
+      <Experience/>
       <Mywork/>
       <Contact/>
       <Footer/>

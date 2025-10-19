@@ -37,15 +37,15 @@ const Navbar = () => {
           <AnchorLink className={`anchor-link ${menu === "about" ? "active" : ""}`} offset={50} href='#about' onClick={() => setMenu("about")}> About</AnchorLink>
         </li>
 
-        <li>
+        {/* <li>
           <AnchorLink className={`anchor-link ${menu === "services" ? "active" : ""}`} offset={50} href='#services' onClick={() => setMenu("services")}> Skills</AnchorLink>
-        </li>
+        </li> */}
 
         <li>
           <AnchorLink
             className={`anchor-link ${menu === "experience" ? "active" : ""}`}
             offset={50}
-            href='#work'
+            href='#experience'
             onClick={() => setMenu("experience")}
           >
             Experience

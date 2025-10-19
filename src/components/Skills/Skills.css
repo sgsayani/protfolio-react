@@ -21,7 +21,7 @@
 }
 
 .skills-heading{
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 600;
   padding: 0px 30px;
   position: relative;
@@ -73,6 +73,7 @@
 
 .skill-item:hover {
   transform: scale(1.1);
+  cursor: pointer;
   background: linear-gradient(90deg, #ff8c00, #ff5e00);
 }
 
