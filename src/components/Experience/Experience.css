@@ -136,6 +136,21 @@
   line-height: 1.6;
   margin-top: 6px;
 }
+.experience-desc li {
+  margin-bottom: 8px;
+  font-size: 15px;            
+  line-height: 1.8;         
+}
+
+.experience-desc strong {
+  color: #ffffff;             
+}
+
+.experience-skills span {
+  padding: 8px 14px;        
+  font-size: 11px;
+}
+
 
 .experience-skills {
   display: flex;
@@ -206,6 +221,7 @@
   .experience-desc {
     font-size: 13px;
   }
+
 
   .experience-item {
     padding-left: 45px;
