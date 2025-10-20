@@ -1,77 +1,83 @@
 import project1_img from '../assets/project_1.svg'
 import project2_img from '../assets/project_2.svg'
 import project3_img from '../assets/project_3.svg'
-import project4_img from '../assets/project_4.svg'
+import project4_img from '../assets/6.png'
 import project5_img from '../assets/project_5.svg'
 import project6_img from '../assets/project_6.svg'
+import project_ecommerce from '../assets/1.png'
+import project_GPT from '../assets/2.png'
+import project_GPT1 from '../assets/3.png'
+import project_pasteApp from '../assets/4.png'
+import  project_leetcode from '../assets/5.png'
+
 
 const mywork_data = [
   {
     id: 1,
-    title: "Battleship",
-    w_img: project1_img,
-    skills: ["HTML", "CSS", "JavaScript", "Node.js"],
+    title: "E-Commerce-Website",
+    w_img: project_ecommerce,
+    skills: ["HTML", "CSS", "JavaScript", "Node.js","Express","React"],
     description:
-      "Used components of JavaScript to implement basic data structures through the game of Battleship. Terminal-based UI shows hits & misses.",
+      "A full-stack E-Commerce web app built with React, Node.js, Express & MongoDB. Features include user authentication, product catalog, cart, checkout, orders, and admin dashboard.",
     company: "Personal Project",
     points: ["Implemented ship placement logic", "Terminal UI", "Unit-tested core functions"],
-    duration: "Mar 2022 - Jun 2022",
-    skillsDetail: "JavaScript, Node.js",
-    github: "https://github.com/you/battleship",
+    duration: "Jun 2025 - Jul 2025",
+    skillsDetail: "Reactjs,JavaScript, Node.js",
+    github: "https://github.com/sgsayani/E-Commerce-Website",
     demo: ""
   },
   {
     id: 2,
-    title: "Movie Titles API",
-    w_img: project6_img,
-    skills: ["HTML", "CSS", "JavaScript", "API"],
+    title: "Quick Gpt",
+    w_img: project_GPT1,
+    skills: ["ReactJS", "ExpressJs", "OpenAI", "MongoDB-atlas","ImageKit","APIs"],
     description:
-      "Aggregates movie data from a public API, sorts titles A–Z, and allows users to save favorites.",
-    company: "Freelance",
+      "QuickGPT is a full-stack AI-powered web application that enables users to chat with AI, generate images, and manage their content — all in one sleek, responsive platform.Built with React, Express.js, MongoDB, ImageKit, and OpenAI APIs, QuickGPT offers a fast, secure, and modern experience inspired by ChatGPT itself. ",
+    company: "Personal Project",
     points: ["API integration", "Favorites persistence", "Responsive layout"],
-    duration: "Sep 2021 - Dec 2021",
-    skillsDetail: "Fetch API, LocalStorage, Vanilla JS",
-    github: "https://github.com/you/movie-api",
-    demo: "https://example.com/movie-demo"
+    duration: "Sept 2025 - Sept 2025",
+    skillsDetail: "Fetch API, LocalStorage,ExpressJs, ReactJS, OpenAI, MongoDB-atlas,ImageKit",
+    github: "https://github.com/sgsayani/QuickGpt",
+    demo: ""
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    w_img: project4_img,
-    skills: ["React", "CSS", "Netlify"],
-    description: "A personal portfolio demonstrating projects, experience, and a contact form.",
-    company: "Personal",
-    points: ["React SPA", "Responsive design", "Deployed to Netlify"],
-    duration: "Jan 2023 - Feb 2023",
-    skillsDetail: "React, CSS Modules",
-    github: "https://github.com/you/portfolio",
-    demo: "https://your-portfolio.example"
+    title: "Paste App",
+    w_img: project_pasteApp,
+    skills: ["HTML", "CSS", "JavaScript","React"],
+    description: "PasteApp is a simple and elegant web application that allows you to create, edit, view, and manage text snippets (a.k.a. “pastes”) — similar to services like Pastebin, but with a clean and modern UI built using React + Redux + Tailwind CSS.",
+    company: "Personal Project",
+    points: [ "Responsive design", "Deployed to Netlify"],
+    duration: "May 2025 - May 2025",
+    skillsDetail: "React, CSS Modules, HTML, JavaScript",
+    github: "https://github.com/sgsayani/Paste-App",
+    demo: ""
   },
   {
     id: 4,
-    title: "Portfolio Website",
-    w_img: project4_img,
-    skills: ["React", "CSS", "Netlify"],
-    description: "A personal portfolio demonstrating projects, experience, and a contact form.",
-    company: "Personal",
-    points: ["React SPA", "Responsive design", "Deployed to Netlify"],
-    duration: "Jan 2023 - Feb 2023",
-    skillsDetail: "React, CSS Modules",
-    github: "https://github.com/you/portfolio",
-    demo: "https://your-portfolio.example"
+    title: "LeetCode-Matrix App",
+    w_img: project_leetcode,
+    skills: ["HTML", "CSS", "Javascript"],
+    description: "A lightweight web app to visualize your LeetCode progress with streak heatmaps, stat cards, and user search. Built with HTML, CSS, and JavaScript. Mobile-friendly,mode changing, no backend.",
+    company: "Personal Project",
+    points: ["Responsive design", "Deployed to Netlify"],
+    duration: "May 2025 - May 2025",
+    skillsDetail: "HTML, CSS Modules, Javascript",
+    github: "https://github.com/sgsayani/LeetCode-MatrixApp",
+    demo: ""
   },
   {
     id: 5,
-    title: "Portfolio Website",
+    title: "House Sales Dashboard",
     w_img: project4_img,
-    skills: ["React", "CSS", "Netlify"],
-    description: "A personal portfolio demonstrating projects, experience, and a contact form.",
+    skills: ["PowerBi", "Dashboard"],
+    description: "In today's dynamic real estate market, having access to comprehensive data is crucial for making informed decisions. That's why this project is developed. This interactive dashboard to provide insights into house sales trends, patterns, and performance metrics.",
     company: "Personal",
-    points: ["React SPA", "Responsive design", "Deployed to Netlify"],
-    duration: "Jan 2023 - Feb 2023",
-    skillsDetail: "React, CSS Modules",
-    github: "https://github.com/you/portfolio",
-    demo: "https://your-portfolio.example"
+    points: ["PowerBi", "Dashboard","Data Visualization"],
+    duration: "Apr 2024 - Apr 2024",
+    skillsDetail: "PowerBi, Data Visualization",
+    github: "https://github.com/sgsayani/House_Sales_Dashboard",
+    demo: ""
   }
 ];
 
