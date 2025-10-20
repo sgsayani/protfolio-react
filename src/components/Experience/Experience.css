@@ -175,7 +175,7 @@
   }
 
   .experience-icon {
-    margin-bottom: 10px;
+   display:none;
   }
 
   .experience-container::before {
@@ -184,5 +184,108 @@
 
   .experience-item::before {
     left: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .experience {
+    margin: 50px 80px;
+  }
+
+  .experience-heading {
+    font-size: 30px;
+  }
+
+  .experience-details h2 {
+    font-size: 16px;
+  }
+
+  .experience-details h3 {
+    font-size: 13px;
+  }
+
+  .experience-desc {
+    font-size: 13px;
+  }
+
+  .experience-item {
+    padding-left: 45px;
+  }
+
+  .experience-container::before {
+    left: 15px;
+  }
+
+  .experience-item::before {
+    left: 8px;
+  }
+}
+
+/* 📱 Responsive: Mobile */
+@media (max-width: 768px) {
+  .experience {
+    margin: 40px 20px;
+  }
+
+  .experience-heading {
+    font-size: 26px;
+  }
+
+  .experience-container::before {
+    left: 10px;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  .experience-icon {
+    margin-bottom: 10px;
+  }
+
+  .experience-item::before {
+    left: 0px;
+    top: 20px;
+  }
+
+  .experience-details h2 {
+    font-size: 15px;
+  }
+
+  .experience-details h3 {
+    font-size: 12px;
+  }
+
+  .experience-desc {
+    font-size: 12px;
+  }
+
+  .experience-skills span {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+}
+
+/* 📱 Extra small devices */
+@media (max-width: 480px) {
+  .experience-heading {
+    font-size: 22px;
+  }
+
+  .experience-item {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .experience-details h2 {
+    font-size: 14px;
+  }
+
+  .experience-details h3 {
+    font-size: 11px;
+  }
+
+  .experience-desc {
+    font-size: 11px;
   }
 }

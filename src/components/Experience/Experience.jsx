@@ -15,7 +15,7 @@ const Experience = () => {
                     </div>
                     <div className='experience-details'>
                         <h2>Frontend Developer</h2>
-                        <h3>ABC Tech Pvt. Ltd.</h3>
+                        <h3>Tata Consultancy Survices</h3>
                         <p className='experience-date'>Jan 2023 – Oct 2024</p>
                         <p className='experience-desc'>
                             Developed responsive and user-friendly web apps using React.js, Next.js & Tailwind.
