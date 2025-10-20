@@ -1,56 +1,248 @@
-.mywork{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:80px;
-    margin:80px 170px;
+/* Container + Title */
+.mywork {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 80px 170px;
 }
-.mywork-title{
-    position: relative;
+
+.mywork-title {
+  text-align: center;
 }
-.mywork-title h1{
-    padding: 0px 30px;
-    font-size:40px;
-    font-weight:600;
+.mywork-title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
 }
-.mywork-title img{
-    position: absolute;
-    bottom:0;
-    right:0;
-    z-index:-1;
+.title-underline {
+  height: 4px;
+  width: 70px;
+  background: #f16357;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: underlineGrow 700ms ease;
 }
-.mywork-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:20px;
+@keyframes underlineGrow {
+  from { width: 0; } to { width: 70px; }
 }
-.mywork-container img{
-    box-sizing:border-box;
-    width:419px;
-    height:280px;
-    transition:0.4s;
-    cursor: pointer;
+
+/* Cards wrapper */
+.mywork-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
-.mywork-container img:hover{
-    transform:scale(1.05);
-    transition:0.4s;
-    border:2px solid #ff00ff;
-    border-radius: 10px;
+
+/* Single project card */
+.mywork-card {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  /* background: rgba(255,255,255,0.02); */
+  /* border: 1px solid rgba(255,255,255,0.06); */
+  /* border-radius: 14px; */
+  overflow: hidden;
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  padding: 22px;
 }
-.mywork-showmore{
-    display :flex;
-    gap:10px;
-    border-radius:50px;
-    border:2px solid white;
-    padding:10px 20px;
-    font-size:16px;
-    font-weight:600;
-    transition:0.4s;
-    cursor: pointer;
-    margin-bottom:60px;
+
+/* Reverse class flips order: image on left */
+.mywork-card.reverse {
+  flex-direction: row-reverse;
 }
-.mywork-showmore:hover{
-    gap:30px;
-    transition:0.6s;
+
+/* Content (description) */
+.mywork-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* skill tags (small pills) */
+.mywork-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mywork-tags .tag {
+  background: #1f1f1f;
+  color: white;
+  border: 1px solid #f16357;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* description and meta */
+.mywork-description {
+  color: #cfcfcf;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* meta rows for company/duration/points */
+.project-meta {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #ddd;
+}
+.meta-row strong { color: #fff; margin-right: 8px; }
+.meta-row ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+  color: #d2d2d2;
+}
+
+/* Buttons */
+.mywork-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+.btn-github {
+  background: #f16357;
+  color: #fff;
+}
+.btn-demo {
+  background: transparent;
+  color: white;
+  border: 1px solid #f16357;
+}
+.btn:hover { transform: translateY(-3px); }
+
+/* Image */
+.mywork-image {
+  width: 380px;
+  max-width: 40%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mywork-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border: 2px solid rgba(255,255,255,0.03);
+}
+
+/* Card hover */
+.mywork-image:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+/* Show more */
+.mywork-showmore {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  color:#f16357;
+  font-weight:500;
+  cursor:pointer;
+}
+.mywork-showmore:hover {
+    transform: scale(1.05);
+}
+/* Modal background */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 85%;
+  animation: zoomIn 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.4);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #f16357;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-btn:hover {
+  background: #f16357;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Cursor pointer on image */
+.mywork-image img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+.mywork-image img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Responsive: stack on small screens (image above content) */
+@media (max-width: 900px) {
+  .mywork { margin: 40px 24px; }
+  .mywork-card, .mywork-card.reverse { flex-direction: column; align-items: stretch; }
+  .mywork-image { width: 100%; max-width: 100%; }
+  .mywork-image img { height: 220px; object-fit: cover; border-radius: 8px; }
+  .mywork-content { padding: 12px 6px 0 6px; }
 }

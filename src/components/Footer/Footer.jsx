@@ -1,38 +1,54 @@
-import React from 'react'
-import './Footer.css'
-import footer_logo from '../../assets/logos.svg'
-import user_icon from '../../assets/user_icon.svg'
+import React from "react";
+import "./Footer.css";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div className="footer-top">
-        <div className="footer-top-left">
-          <img src={footer_logo} alt="" />
-          <p>I am a web developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus cumque repellendus. Commodi exercitationem sed itaque! Voluptas laborum fugit ipsum distinctio quis soluta, vero eveniet, culpa animi tempora, qui labore.</p>
-        </div>
+    <footer className="footer">
+      <div className="footer-content">
+        {/* Logo / Name */}
+        <h2 className="footer-logo">Sayani Ghatak</h2>
 
-        <div className="footer-top-right">
-          <div className="footer-email-input">
-            <img src={user_icon} alt="" />
-            <input type="email" placeholder='Enter your email' />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
+        {/* Subtitle */}
+        <p className="footer-text">
+          Designed with ❤️. All rights reserved for Sayani Ghatak.
+        </p>
+
+        {/* Social Icons */}
+        <div className="footer-icons">
+          <a
+            href="mailto:sgsayanighatak@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <Mail size={22} />
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <Github size={22} />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <Linkedin size={22} />
+          </a>
         </div>
       </div>
 
-      <hr />
-
+      {/* Copyright */}
       <div className="footer-bottom">
-        <p className="footer-bottom-left">Copyright © 2022 Sayani Ghatak</p>
-        <div className="footer-bottom-right">
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
-        </div>
+        <p>© {new Date().getFullYear()} Sayani Ghatak. All rights reserved.</p>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
