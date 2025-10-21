@@ -17,15 +17,15 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="footer-icons">
           <a
-            href="mailto:sgsayanighatak@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sgsayanighatak@gmail.com"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="footer-icon"
           >
             <Mail size={22} />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/sgsayani"
             target="_blank"
             rel="noreferrer"
             className="footer-icon"
@@ -33,7 +33,7 @@ const Footer = () => {
             <Github size={22} />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/sayani-ghatak/"
             target="_blank"
             rel="noreferrer"
             className="footer-icon"

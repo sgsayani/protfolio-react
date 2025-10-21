@@ -130,12 +130,14 @@
 @media (max-width: 1024px) {
   .hero-profile-img img {
     max-width: 300px; 
+    height:250px
   }
 }
 
 @media (max-width: 768px) {
   .hero-profile-img img {
     max-width: 300px;
+    height:300px
   }
 }
 

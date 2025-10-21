@@ -9,6 +9,8 @@ import project_GPT from '../assets/2.png'
 import project_GPT1 from '../assets/3.png'
 import project_pasteApp from '../assets/4.png'
 import  project_leetcode from '../assets/5.png'
+import project7_img from '../assets/7.png'
+import project8_img from '../assets/8.png'
 
 
 const mywork_data = [
@@ -78,7 +80,46 @@ const mywork_data = [
     skillsDetail: "PowerBi, Data Visualization",
     github: "https://github.com/sgsayani/House_Sales_Dashboard",
     demo: ""
+  },
+   {
+    id: 6,
+    title: "Super Store Sales Dashboard ",
+    w_img: project7_img,
+    skills: ["PowerBi", "Dashboard"],
+    description: "In the fast-paced world of retail, harnessing data-driven insights is crucial for unlocking business potential. Introducing the Super Store Sales Dashboard, a powerful tool designed to visualize, analyze, and optimize our performance as retailers. Dive into the realm of data analysis, with a focus on time series analysis, to deliver precise sales",
+    company: "Personal",
+    points: ["PowerBi", "Dashboard","Data Visualization"],
+    duration: "Apr 2024 - Apr 2024",
+    skillsDetail: "PowerBi, Data Visualization",
+    github: "https://github.com/sgsayani/House_Sales_Dashboard",
+    demo: ""
+  },
+   {
+    id: 7,
+    title: "An AI-based medical chatbot model for infectious disease prediction",
+    w_img: project8_img,
+    skills: ["Machine Learning", "AI"],
+    description: "The purpose of this paper is to show concisely how we can promote chatbots in the medical sector and cure infectious diseases. We can create awareness through the users, and the users can get proper medical solutions to prevent disease. We created a preliminary training model and a study report to improve human interaction in databases in 2021. Through natural language processing, we describe the human behaviors and characteristics of the chatbot. In this paper, we propose an AI Chatbot interaction and prediction model using a deep feedforward multilayer perceptron. Our analysis discovered a gap in knowledge about theoretical guidelines and practical recommendations for creating AI chatbots for lifestyle improvement programs.",
+    company: "Paper Published Project",
+    points: ["Machine Learning", "Chatbot","AI"],
+    duration: "May 2022 - Dec 2022",
+    skillsDetail: "Machine Learning, AI",
+    github: "",
+    demo: "https://ieeexplore.ieee.org/abstract/document/9970731/keywords"
   }
+  //  {
+  //   id: 8,
+  //   title: "House Sales Dashboard",
+  //   w_img: project4_img,
+  //   skills: ["PowerBi", "Dashboard"],
+  //   description: "In today's dynamic real estate market, having access to comprehensive data is crucial for making informed decisions. That's why this project is developed. This interactive dashboard to provide insights into house sales trends, patterns, and performance metrics.",
+  //   company: "Personal",
+  //   points: ["PowerBi", "Dashboard","Data Visualization"],
+  //   duration: "Apr 2024 - Apr 2024",
+  //   skillsDetail: "PowerBi, Data Visualization",
+  //   github: "https://github.com/sgsayani/House_Sales_Dashboard",
+  //   demo: ""
+  // }
 ];
 
 export default mywork_data;

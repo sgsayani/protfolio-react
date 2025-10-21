@@ -12,6 +12,11 @@ const About = () => {
     window.open("https://docs.google.com/document/d/1C-K5KPU28cxPmUvpTumrakMgxlsQQFkiRjWR16Qxhjw/edit?usp=sharing", "_blank");
   };
 
+  const handleRedirectToPublications  =() =>{
+        window.open("https://www.linkedin.com/in/sayani-ghatak/details/publications/", "_blank");
+
+  }
+
     return (
         <div id='about' className='about'>
             {/* Title */}
@@ -67,6 +72,11 @@ const About = () => {
                         <div className="about-achievement" onClick={handleRedirectToAchievements} >
                             <h1>10+</h1>
                             <p>ACHIEVEMENTS</p>
+                        </div>
+                         <hr />
+                        <div className="about-achievement" onClick={handleRedirectToPublications} >
+                            <h1>5+</h1>
+                            <p>PAPER PUBLICATION</p>
                         </div>
                     </div>
                 </div>
